@@ -29,4 +29,3 @@ Para qualquer dúvida ou feedback, por favor, entre em contato:
 
 - **Email**: mkpro10@alu.ufc.br
 - **LinkedIn**: https://www.linkedin.com/in/antonio-mikael-a49b2b201/
-- **GitHub**: [github.com/seu-usuario](https://github.com/seu-usuario)
