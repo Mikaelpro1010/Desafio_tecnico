@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio técnico - Q5</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    let palavra = "Exemplo";
+    let palavraInvertida = [];
+
+    //Implementando um laço de repetição para percorrer a string de forma decrescente
+    for(let i = palavra.length; i >= 0; i--) {
+        //Adicionando os caracteres dentro do array para formar a palavra invertida
+        palavraInvertida.push(palavra[i]);
+    }
+
+    //Removendo as vírgulas e juntando os caracteres
+    palavraInvertida = palavraInvertida.join("");
+
+    //Imprimindo a palavra invertida gerada
+    alert("A palavra " + palavra + " escrita de forma invertida é: " + palavraInvertida);
+</script>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio técnico - Q2</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    function sequenciaFibonacci(number) {
+        let x = 0, y = 1, temp;
+
+        // Verifica os primeiros valores da sequência
+        if (number === x || number === y) return true;
+
+        // Gera a sequência até que o valor seja encontrado ou ultrapassado
+        while (x < number) {
+            temp = x + y;
+            x = y;
+            y = temp;
+        }
+
+        // Caso o valor seja igual a 'b', ele faz parte da sequência
+        return y === number;
+    }
+
+    let number = 30;
+    if (sequenciaFibonacci(number)) {
+        //Imprimindo a mensagem quando o valor pertencer a sequência de Fibonacci
+        alert("O valor " + number + " pertence à sequência de Fibonacci.");
+    } else {
+        //Imprimindo a mensagem quando o valor não pertencer a sequência de Fibonacci
+        alert("O valor " + number + " não pertence à sequência de Fibonacci.");
+    }
+</script>

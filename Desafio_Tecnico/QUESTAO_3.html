@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio técnico - Q3</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    fetch('dados.json')
+    .then(response => response.json()) // Converte o conteúdo do arquivo JSON em um objeto
+    .then(data => {
+        //Selecionar apenas valores que sejam diferente de 0
+        let valores = data
+            .map(item => item.valor) 
+            .filter(valor => valor > 0);
+        
+        //Realizando a soma de todos os valores presentes no arquivo
+        let valorTotal = valores.reduce((acumulador, valorAtual) => acumulador + valorAtual, 0);
+
+        //Verificando a quantidade de valores presentes no arquivo
+        let quantidade = valores.length;
+
+        //Implementando a média baseada no valorTotal e na quantidade encontradas
+        let media = valorTotal / quantidade;
+      
+        // Contar o número de dias em que o valor ultrapassou a média
+        let diasAcimaMedia = valores.filter(valor => valor > media).length;
+
+        //Encontra o menor valor presente no arquivo JSON
+        let menorValor = Math.min(...valores);
+
+        //Encontrar o maior valor presente no arquivo JSON
+        let maiorValor = Math.max(...valores);
+
+        //Imprimindo o menor valor encontrado
+        alert("O menor valor de faturamento ocorrido em um dia do mês é: " + menorValor);
+
+        //Imprimindo o maior valor encontrado
+        alert("O maior valor de faturamento ocorrido em um dia do mês é: " + maiorValor);
+
+        alert("O número de dias no mês em que o valor de faturamento diário foi superior à média mensal é de: " + diasAcimaMedia);
+    })
+    .catch(error => console.error('Erro ao carregar o arquivo JSON:', error));
+</script>

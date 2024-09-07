@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio técnico - Q4</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    //Atribuindo os valores de faturamento
+    let SP = 67836.43;
+    let RJ = 36678.66;
+    let MG = 29229.88;
+    let ES = 27165.48;
+    let outros = 19849.53;
+
+    //Realizando a somatória de faturamento de todos os Estados para encontrar o valor total
+    let valorTotal = SP + RJ + MG + ES + outros;
+
+    //Aplicando a fórmula de conversão do valor em porcentagem
+    let valorPorcentagemSP = (SP / valorTotal) * 100;
+    let valorPorcentagemRJ = (RJ / valorTotal) * 100;
+    let valorPorcentagemMG = (MG / valorTotal) * 100;
+    let valorPorcentagemES = (ES / valorTotal) * 100;
+    let valorPorcentagemOutros = (outros / valorTotal) * 100;
+
+    //Imprimindo o percentual mensal de cada Estado
+    alert("O percentual de representação que SP possui dentro do valor mensal da distribuidora é de: " + valorPorcentagemSP.toFixed(2) + " %");
+    alert("O percentual de representação que RJ possui dentro do valor mensal da distribuidora é de: " + valorPorcentagemRJ.toFixed(2) + " %");
+    alert("O percentual de representação que MG possui dentro do valor mensal da distribuidora é de: " + valorPorcentagemMG.toFixed(2) + " %");
+    alert("O percentual de representação que ES possui dentro do valor mensal da distribuidora é de: " + valorPorcentagemES.toFixed(2) + " %");
+    alert("O percentual de representação que outros estados possuem dentro do valor mensal da distribuidora é de: " + valorPorcentagemOutros.toFixed(2) + " %");
+</script>
