@@ -16,3 +16,11 @@ Este projeto foi desenvolvido como parte do desafio técnico da Target. O objeti
    ```bash
    git clone https://github.com/Mikaelpro1010/Desafio_tecnico.git
    cd target-desafio
+
+## Contato
+
+Para qualquer dúvida ou feedback, por favor, entre em contato:
+
+- **Email**: mkpro10@alu.ufc.br
+- **LinkedIn**: https://www.linkedin.com/in/antonio-mikael-a49b2b201/
+- **GitHub**: [github.com/seu-usuario](https://github.com/seu-usuario)
